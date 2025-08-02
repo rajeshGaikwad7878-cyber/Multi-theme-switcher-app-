@@ -1,0 +1,85 @@
+/* Default Reset */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Shared Layout */
+.app-header {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-body {
+  display: flex;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+}
+
+.app-sidebar {
+  width: 200px;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Theme 1 - Light Minimalist */
+body.theme1 {
+  background-color: #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+body.theme1 .app-header {
+  background-color: #ffffff;
+  color: #000;
+}
+
+body.theme1 .app-sidebar {
+  background-color: #f9f9f9;
+}
+
+/* Theme 2 - Dark with Sidebar */
+body.theme2 {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  font-family: 'Georgia', serif;
+}
+
+body.theme2 .app-header {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+body.theme2 .app-sidebar {
+  background-color: #333;
+}
+
+/* Theme 3 - Colorful Card-based */
+body.theme3 {
+  background-color: #ffe4e1;
+  color: #333;
+  font-family: 'Pacifico', cursive;
+}
+
+body.theme3 .app-header {
+  background-color: #ff69b4;
+  color: white;
+}
+
+body.theme3 .app-sidebar {
+  background-color: #ffb6c1;
+}
